@@ -1,145 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>S.M. Toufek Hasan | Cybersecurity & Web Specialist</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-    }
-    header {
-      background-color: #1f1f1f;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.3rem 0.5rem;
-    }
-    nav a.cv-link {
-      
-      border-radius: 0.5rem;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    h2 {
-      color: #00ffcc;
-      border-bottom: 1px solid #00ffcc;
-      padding-bottom: 0.5rem;
-    }
-    .skills span, .certs span {
-      display: inline-block;
-      margin: 0.25rem;
-      padding: 0.5rem 1rem;
-      background: #292929;
-      border-radius: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #1f1f1f;
-      margin-top: 2rem;
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
-  </style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Toufek Hasan | Cybersecurity</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap + Toufek main styles -->
+	<link rel="stylesheet" href="assets/css/toufek.css">
 </head>
-<body>
-  <header>
-    <img src="Toufek Hasan.jpg" alt="S.M. Toufek Hasan" />
-    <h1>S.M. Toufek Hasan</h1>
-    <p>Junior Penetration Tester | WordPress Expert | Cybersecurity Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-      <a href="Toufek_Hasan_cv.pdf" class="cv-link" download>Download CV</a>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-4">
+                <li class="social-item">
+                    <a class="social-link text-dark" href="https://linkedin.com/in/toufekhasan" target="_blank" rel="noopener noreferrer">
+                        <i class="ti-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-dark" href="https://x.com/ToufekHasan" target="_blank" rel="noopener noreferrer">
+                        <i class="ti-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-dark" href="https://github.com/toufekhasan" target="_blank" rel="noopener noreferrer">
+                        <i class="ti-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-dark" href="https://www.youtube.com/@vulnhunt" target="_blank" rel="noopener noreferrer">
+                        <i class="ti-youtube" aria-hidden="true"></i>
+                    </a>
+                </li>
+                
+            </ul>
+              
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Toufek Hasan</h1>
+                <h6 class="header-mono" >Penetration Tester | WordPress Expert | Cybersecurity Enthusiast</h6>
+                <a href="Toufek_Hasan_cv.pdf" download class="btn btn-primary btn-rounded">
+                    <i class="ti-download pr-2"></i>Download Resume
+                  </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Toufek Hasan</h5>
+                        <div class="brand-subtitle">Penetration Tester | WordPress Expert | Cybersecurity Enthusiast</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Ethical HAcker / Web Developer </h5>
+                <p class="mt-20">I'm a Ethical Hacker & Web Developer Ethical Hacker who believes in doing good through code. I build, I protect, and I keep learning — all from our lovely planet Earth.</p>
+                <a href="Toufek_Hasan_cv.pdf" download class="btn btn-primary btn-rounded">
+                    <i class="ti-download pr-2"></i>Download CV
+                  </a>
+                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    
+                    <li><span>Email</span> : toufekhasan.bd@gmail.com</li>
+                    <li><span>Phone</span> : + (880) 1824195690 (whatsapp)</li>
+                    <li><span>Skype</span> : Toufek Hasan </li>
+                    <li><span>Address</span> :  Uttara, Dhaka, Bangladesh.</li>
+                </ul>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate cybersecurity professional with experience in ethical hacking, penetration testing, WordPress development, and bug bounty hunting. With training and internship experience, I aim to help clients secure their systems and grow their online presence. I run a YouTube channel and Facebook page under the brand "VulnHunt."</p>
-  </section>
+                <ul class="social-icons pt-4">
+                    <li class="social-item">
+                        <a class="social-link text-dark" href="https://linkedin.com/in/toufekhasan" target="_blank" rel="noopener noreferrer">
+                            <i class="ti-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link text-dark" href="https://x.com/ToufekHasan" target="_blank" rel="noopener noreferrer">
+                            <i class="ti-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link text-dark" href="https://github.com/toufekhasan" target="_blank" rel="noopener noreferrer">
+                            <i class="ti-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link text-dark" href="https://www.youtube.com/@vulnhunt" target="_blank" rel="noopener noreferrer">
+                            <i class="ti-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link text-dark" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="ti-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+               
+            
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Penetration Testing</span>
-      <span>Linux</span>
-      <span>Windows Server</span>
-      <span>Web Development</span>
-      <span>WordPress</span>
-      <span>Shopify</span>
-      <span>Bug Bounty</span>
-      <span>Networking</span>
-      <span>Information Gathering</span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1">
+                        <i class="ti-lock icon-lg"></i>
+                    </div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Cybersecurity</h6>
+                        <ul class="subtitle">
+                            <li>Penetration Testing</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Web App Security</li>
+                            <li>Network Defense</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <ul class="subtitle">
+                            <li>WordPress</li>
+                            <li>shopify</li>
+                            <li>Frontend</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Digital Marketing</h6>
+                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <hr>
+                    </div>
+                </div> -->
+            </div>
+        </div>
     </div>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>VulnHunt (YouTube Channel):</strong> Educational content on cybersecurity and tech.</li>
-      <li><strong>Facebook Business Page:</strong> Spreading awareness about online threats and offering services.</li>
-      <li><strong>Weather App (Android):</strong> Developed using Kotlin and Java libraries for real-time weather updates.</li>
-    </ul>
-  </section>
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Training</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2025 - Present</h6>
+                            <P>Cybersecurity</P>
+                            <P class="subtitle"><li>Penetration Testing</li></P>
+                            <hr>
+                            <h6 class="title text-danger">2023 - 2024</h6>
+                            <h6>Cybersecurity and Ethical Hacking</h6>
+                            <P class="subtitle">Training completed from Byte Capsule IT and Adware IT</P>
+                            <hr>
+                            <h6 class="title text-danger">2021 - 2022</h6>
+                            <h6>Server Administration (including Windows Server Management)</h6>
+                            <P class="subtitle">Completed 240-hour training under UY LAB, controlled by ICT Division, Bangladesh (Feb 2022 – May 2022).</P>
+                            <h6>Skill Development for Mobile Game & Application</h6>
+                            <P class="subtitle">Completed 200-hour training under Flash IT Ltd., controlled by ICT Division, Bangladesh (Dec 2021 – Feb 2022).</P>
+                            <hr>
+                            <h6 class="title text-danger">2020</h6>
+                            <h6>Graphic design</h6>
+                            <P class="subtitle">Completed 200-hour training under the Learning & Earning Development Project (LEDP), ICT Division, Bangladesh – 2022.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2025 - Present</h6>
+                            <P>B.Sc in Engineering</P>
+                            <P class="subtitle"> <h6>Bangladesh Open University(BOU)</h6> Dept. of Computer Science & Engineering</P>
+                            <hr>
+                            <h6 class="title text-danger">2019</h6>
+                            <P>Higher Secondary Certificate(HSC)</P>
+                            <P class="subtitle">Milestone Collage, Uttara, Dhaka <br>Passed with GPA 4.50 out of 5.00 in Science</P>
+                            <hr>
+                            <h6 class="title text-danger">2017</h6>
+                            <P>Secondary School Certificate(SSC)</P>
+                            <P class="subtitle">kamarpara school and college, Uttara, Dhaka. <br> Passed with GPA 4.14 out of 5.00 in Science</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>Cybersecurity </h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Kali Linux</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Penetration Testing</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Windows Server</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Web Development</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>WordPress</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Shopify </h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Bug Bounty</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Information Gathering </h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>French</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Spanish</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certs">
-      <span>Android Bug Bounty Hunting</span>
-      <span>SQL Injection Attacks (EC-Council)</span>
-      <span>Certified Security Awareness (Mile2)</span>
-      <span>Ethical Hacking Training</span>
-      <span>Cybersecurity for Professionals</span>
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">50</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">5</h1>
+                            <p class="text-light mb-1">Project Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">20</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="fas fa-user-secret text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Penetration Testing</h5>
+                            <P class="subtitle">Penetration testing, or ethical hacking, simulates cyberattacks to find and fix vulnerabilities in systems, networks, or apps. It helps prevent real attacks. Types include black box (no knowledge), white box (full knowledge), and gray box (partial knowledge). Key phases are reconnaissance, scanning, exploitation, post-exploitation, and reporting. Tools like Nmap, Burp Suite, Metasploit, and SQLmap are used. It’s vital for strong cybersecurity.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="fas fa-search text-warning" aria-hidden="true"></i> <!-- Or use another icon -->
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Vulnerability Assessment</h5>
+                            <P class="subtitle">Vulnerability Assessment is the process of scanning systems, networks, or applications to identify and evaluate security weaknesses. It helps organizations detect vulnerabilities before they are exploited but does not attempt to exploit them like penetration testing. Tools such as Nessus, OpenVAS, and Qualys are commonly used. Regular assessments improve overall security by highlighting risks and guiding necessary fixes to reduce potential threats.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="fas fa-shield-alt text-primary" aria-hidden="true"></i> <!-- Or fa-lock, fa-globe -->
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Website Security</h5>
+                            <P class="subtitle">Website security involves protecting your site from threats like hacking, malware, and data theft. It includes setting up firewalls, regular vulnerability scans, secure login systems, and real-time monitoring. Strong security ensures user trust, prevents downtime, and keeps your data safe from unauthorized access or cyber attacks. It's essential for business reputation and long-term success.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                         <i class="ti-world text-primary" aria-hidden="true"></i>
+                         </div>
+                         <div class="card-body px-4 py-3">
+                         <h5 class="mb-3 card-title text-dark">Web Development</h5>
+                         <p class="subtitle">
+                             I specialize in modern web development using HTML, CSS, JavaScript, and frameworks like WordPress and Shopify. I build responsive, fast, and SEO-friendly websites tailored to meet your business goals.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                 <div class="card mb-5">
+    <div class="card-header has-icon">
+        <i class="ti-wordpress text-danger" aria-hidden="true"></i>
     </div>
-  </section>
+    <div class="card-body px-4 py-3">
+        <h5 class="mb-3 card-title text-dark">WordPress Development</h5>
+        <p class="subtitle">
+            I create custom and responsive WordPress websites tailored to your needs. Whether it's a personal blog, business site, or eCommerce store, I ensure fast performance, strong security, and easy management.
+        </p>
+    </div>
+</div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>whatsapp: <a href="+8801770629982"></a>+8801770629982</p>
-    <p>Email: <a href="mailto:toufekhasan.bd@gmail.com">toufekhasan.bd@gmail.com</a></p>
-    <p>YouTube: <a href="https://youtube.com/@VulnHunt" target="_blank">@VulnHunt</a></p>
-    <p>Facebook: <a href="https://facebook.com/VulnHunt" target="_blank">VulnHunt</a></p>
-  </section>
+                </div>
+              <div class="col-md-4 col-sm-6">
+    <div class="card mb-5">
+        <div class="card-header has-icon">
+            <i class="ti-paint-bucket text-danger" aria-hidden="true"></i>
+        </div>
+        <div class="card-body px-4 py-3">
+            <h5 class="mb-3 card-title text-dark">Graphic Design</h5>
+            <p class="subtitle">
+                I provide creative and professional graphic design services, including logo design, banners, posters, and social media content. My designs are tailored to enhance your brand identity and visual presence.
+            </p>
+        </div>
+    </div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 S.M. Toufek Hasan | Built with passion for cybersecurity and web technology.</p>
-  </footer>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-dark py-5">
+    <div class="container text-center">
+        <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
+        <a href="https://shorturl.at/eYHFm" target="_blank">
+            <button class="btn bg-primary w-lg">Hire me</button>
+        </a>
+    </div>
+</section>
+
+
+
+    <!-- Latest News -->
+  <br>
+
+    <!--Latest News -->
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (880) 1824195690</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Dhaka, Bangladesh.</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">toufekhasan.bd@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="https://linkedin.com/in/toufekhasan" target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="https://x.com/ToufekHasan" target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-google" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://linkedin.com/in/toufekhasan"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://x.com/ToufekHasan"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul>  -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <a href="https://github.com/toufekhasan" target="_blank">
+    <span class="text-danger" title="Visit Toufek's GitHub">@Toufek Hasan</span>
+</a>
+
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    
+
+    <!-- Toufek js -->
+    <script src="assets/js/toufek.js"></script>
+
 </body>
 </html>
